@@ -58,14 +58,14 @@ function Timeline() {
                                     color:item.color,
                                     borderColor:item.color,
                                     flex:1,
-                                    left:item.date[0][2]*10,
+                                    left:item.date[2][1]*10,
                                     borderRadius: 50,
                                     zIndex:1,
                                     }}
                                 >
                                     {item.event}
                                 </Event>
-                                <Stroke style={{width:(item.date[0][1]+5)*20}}></Stroke>
+                                <Stroke style={{width:(item.date[2][1]+5)*50}}></Stroke>
                             </View>
                         ))
                     }
