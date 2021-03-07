@@ -93,7 +93,7 @@ function Timeline() {
                                                 </Date>
                                             ))
                                         }
-                                        <Fade style={{left:(item.date[2][1]-1)*40,width:(p-item.date[2][1])*40+20}}></Fade>
+                                        <Fade style={{left:0,width:(30*curr_month+p-1)*40}}></Fade>
                                         <Marker style={{left:(30*curr_month+p-1)*40,zIndex:-1}}></Marker>
                                     </View>
                                 ))
