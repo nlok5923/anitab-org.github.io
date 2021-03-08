@@ -58,7 +58,7 @@ function Timeline() {
                                     color:item.color,
                                     borderColor:item.color,
                                     flex:1,
-                                    left:item.date[2][1]*5,
+                                    left:50,
                                     borderRadius: 50,
                                     zIndex:1,
                                     }}
@@ -79,7 +79,7 @@ function Timeline() {
                             {
                                 events.map((item,index)=>(
                                     <View style={{marginBottom:32,flexDirection:'column'}} key={index}>
-                                        <Line style={{left:(item.date[2][1]-1)*40, width:30*12*50, borderBottomColor:item.color}}></Line>
+                                        <Line style={{left:0, width:30*12*50, borderBottomColor:item.color}}></Line>
                                         {
                                             item.date.map((d)=>(
                                                 <Date
