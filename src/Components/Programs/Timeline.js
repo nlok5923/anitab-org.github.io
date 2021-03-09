@@ -20,7 +20,7 @@ function Timeline() {
     const scrollRef = useRef();
     //scrolls the timeline to the current date and month
     useEffect(() => {
-        scrollRef.current.scrollTo({x:(30*curr_month+p-1)*40});
+        scrollRef.current.scrollTo({x:(30*curr_month+p-1)*36});
     })
     //onclick scrolls the timeline to the left
     const scrollLeft=()=>{
@@ -98,7 +98,7 @@ function Timeline() {
                                     </View>
                                 ))
                             }
-                            <View style={{left:(30*curr_month+p-1)*40}}><Text>Today {dayjs().date()}th {months[curr_month][1]}</Text></View>
+                            <View style={{left:(30*curr_month+p-0.8)*40}}><Text>Today {dayjs().date()}th {months[curr_month][1]}</Text></View>
                             <View style={{flexDirection:'row'}}>
                                 {
                                     months.map((m,index)=>(
