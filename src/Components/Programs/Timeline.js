@@ -58,7 +58,7 @@ function Timeline() {
                                     color:item.color,
                                     borderColor:item.color,
                                     flex:1,
-                                    left:50,
+                                    left:20,
                                     borderRadius: 50,
                                     zIndex:1,
                                     }}
